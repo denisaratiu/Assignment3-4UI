@@ -75,14 +75,14 @@ public class SortingSearchingRuntime {
             // increase counter each time
             position[frequency] = position[frequency] + 1;
         }
-        // make two values to swap
+        // make two values to swap and keep track of positions
         int value1 = 0;
         int value2 = 0;
         // sort through array 
         while (value1 < trackerArray.length) {
             // make sure the value is greater than 0
             if (position[value2] > 0) {
-                // keep track of array and switch
+                // set the array position to value position
                 trackerArray[value1] = value2;
                 // subtract one from array value
                 position[value2]--;
